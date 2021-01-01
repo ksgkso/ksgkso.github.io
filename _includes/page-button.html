@@ -1,0 +1,14 @@
+<div class="page-control">
+	<div>
+		{% if post.previous.url %}
+		<a id="prev" class="button" href="{{ post.previous.url }}">&laquo; 이전글 </a>
+		{% endif %}
+	</div>
+
+	<div>
+		{% if post.next.url %}
+		<a id="next" class="button" href="{{ post.next.url }}">다음글 &raquo;</a>
+		{% endif %}
+	</div>
+</div>
+
